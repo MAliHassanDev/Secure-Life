@@ -1,0 +1,302 @@
+@font-face {
+  font-family: myfont;
+  src: url("font/Sacramento.ttf")
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+  font-family: "Roboto", sans-serif;
+}
+p {
+  margin: 0px;
+  font-family:'Times New Roman', Times, serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  margin: 2rem;
+}
+button {
+  transition: background-color .2s ease-in;
+  background-color: var(--btn-clr);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Arial;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+:root{
+  --btn-clr: rgb(108, 214, 137);
+  --article-clr: rgb(238, 242, 228);
+  --sub-article-clr: rgb(249, 255, 216);
+  --secnond-text-clr: rgb(17, 134, 49);
+  --heading-text-clr: rgb(0, 89, 36);
+  -aside-clr: rgb(248, 160, 140);
+  --hover-clr: rgba(108, 214, 136, 0.7);
+  --roman-font : 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* Header Section */
+
+.flex-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.navlogo p{
+  margin: 2rem;
+  font-size: 3.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color .26s ease;
+  font-family: myfont;
+}
+
+nav {
+  height: 8.4rem;
+  max-width: 1425px;
+  display: flex;
+  flex:1;
+  align-items:center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 35px;
+
+}
+
+.nav-links ul li, 
+.nav-signin ul li{
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: color .16s ease;
+}
+ul li:hover,
+.navlogo p:hover{
+  color: var(--btn-clr)
+}
+ul li:active,
+.navlogo p:active{
+  color: rgb(91, 196, 119);
+}
+
+/* Hero Section */
+
+
+.hero-container{
+  max-width: 1500px;
+  padding: 3rem 14rem 5.5rem 14rem;
+  justify-content: space-between;
+}
+
+#hero-image-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-image {
+  height: 58rem;
+  width: 58rem;
+  border-radius: 50%;
+  border: 3rem solid #eedec5;
+  box-shadow: inset 0px 0px 3px 5px black;
+  margin-bottom: 4rem;
+}
+.hero-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#hero-description{
+  flex-basis: 450px;
+  padding-bottom: 10rem;
+}
+#hero-description h1{
+  font-size: 6rem;
+  font-family: myfont;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  
+}
+#hero-description p{
+  font-size: 1.7rem;
+  font-family:'Times New Roman', Times, serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 4rem;
+  max-width: 40rem;
+}
+button {
+  padding: 1.4rem 1.6rem;
+  font-size: 1.5rem;
+}
+button:hover{
+  background-color:rgba(108, 214, 136, 0.7);
+}
+.hero-image-description{
+  flex-direction: column;
+}
+.hero-image-description .description-line1{
+  font-size: 1.5rem;
+  letter-spacing: .3px;
+}
+.hero-image-description .description-line2{
+  margin-top: -14px;
+  
+}
+.description-line{
+  color: var(--secnond-text-clr);
+  text-align: center;
+  font-family: myfont;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: relative;
+  width: fit-content;
+}
+.description-line::after{
+  content:'';
+  position: absolute;
+  left:0;
+  bottom: -3px;
+  height: 1.5px;
+  width: 0%;
+  background-color: rgb(17, 124, 45);
+  transition: width .4s ease;
+}
+.description-line:hover::after{
+  width: 100%;
+}
+/* Hero More Info Section */
+#hero-moreinfo{
+  background-color: var(--article-clr);
+  padding: 6.4rem 0rem 6.6rem 0rem;
+  margin-bottom: 38px;
+}
+.moreinfo-container{
+  max-width: 1425px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--article-clr);
+  padding: 0 35px;
+  flex: 1;
+}
+
+.moreinfo-cards{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 6rem;
+  gap: 2.5rem;
+}
+.more-info-heading{
+  margin-bottom: 3.5rem;
+}
+.more-info-heading h2{
+  font-size: 3.8rem;
+  font-weight: 400;
+}
+.more-info-heading h3{
+  font-size: 3.4rem;
+  font-family: myfont;
+  font-weight: 400;
+}
+.infocard{
+  max-width: 310px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px 25px 5.5rem 25px;
+  /* box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.171); */
+  box-shadow: 0px 0px 0px .2px rgba(0, 0, 0, 0.171);
+}
+.infocard h3{
+  font-size: 3.7rem;
+  font-family: myfont;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.978);
+  margin-bottom: 2px;
+}
+.infocard h4{
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.946);
+  margin-bottom: 3.4rem;
+}
+.infocard p{
+  font-size: 1.7rem;
+}
+.infocard-image{
+  background: transparent;
+  padding-bottom: 24px;
+  margin-right: 5rem;
+  align-self: flex-end;
+  flex-direction: column;
+  box-shadow: none;
+}
+.infocard-image img{
+  width: 130px;
+  margin-bottom: 35px;
+}
+.infocard-image p{
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Quotes and Ratings Section */
+#quotesAndRatings{
+  padding: 0 35px;
+  margin-bottom: 50rem;
+  width: 100%;
+}
+.quotes-container{
+  background-color: var(--sub-article-clr);
+  height: fit-content;
+  max-width: 1355px;
+  flex: 1;
+  padding: 8.5% 6rem;
+  gap: 5%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 24px 0px
+}
+
+.ratingsImg{
+  flex: 1.25;
+}
+.ratingsImg img{
+ width: 100%;
+}
+.ratingsDescription{
+  flex: 1;
+}
+.ratingsDescription h2{
+  font-size: 5rem;
+  font-weight: 300;
+}
+.ratingsDescription h3{
+  font-size: 5rem;
+  font-family: myfont;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+.ratingsDescription p{
+  font-size: 1.7rem;
+  margin-bottom: 3.7rem;
+}

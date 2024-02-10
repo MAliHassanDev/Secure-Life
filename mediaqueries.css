@@ -1,0 +1,167 @@
+@media screen and (max-width: 1400px){
+  .hero-container{
+    padding: 3rem 8rem;
+  }
+}
+
+
+@media screen and (max-width: 1300px){
+  .hero-container{
+    padding: 3rem 5.5rem;
+  }
+}
+
+@media screen and (max-width: 1250px){
+  html {
+    font-size: 58%;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  html {
+    font-size: 54%;
+  }
+  #hero-description{
+    flex-basis: 400px;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .nav-links,
+  .nav-signin{
+    display: none;
+  }
+} 
+
+@media screen and (max-width: 1050px){
+  html {
+    font-size: 52%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  html{
+    font-size: 62.5%;
+  }
+  .hero-container{
+    flex-direction: column-reverse;
+    padding: 3rem 2.4rem;
+    row-gap: 4rem;
+  }
+  .hero-image-description{
+    display: none;
+  }
+  .hero-image{
+    margin-bottom: 0rem;
+  }
+  #hero-description{
+    padding-bottom: 0rem;
+    flex-basis: 280px;
+  }
+  #hero-description p{
+    max-width: 650px;
+    margin-bottom: 2.4rem;
+  }
+  #hero-description h1{
+    max-width: 350px;
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  #hero-moreinfo{
+    padding: 3.5rem 0rem 4rem 0rem ;
+  }
+  .moreinfo-cards{
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .moreinfo-container{
+    max-width: 700px;
+    padding: 0 24px;
+  }
+  .infocard{
+    max-width: 100%; 
+  }
+  .infocard-image{
+    align-self: flex-start;
+    margin-right: 0rem;
+    padding: 0px 0px 20px 1px;
+  }
+  #quotesAndRatings{
+    padding: 0 24px;
+  }
+  .quotes-container{
+    flex-direction: column-reverse;
+    padding: 30px;
+    gap: 10rem;
+    max-width: 652px;
+  }
+  .ratingsImg{
+    max-width: 500px;
+    min-width: 270px;
+  }
+  .ratingsDescription h2,
+  .ratingsDescription h3{
+    font-size: 4rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 700px){
+  .hero-container{
+    row-gap: 3.5rem;
+  }
+  .hero-image{
+    height:32rem;
+    width: 32rem;
+    border: 1.5rem solid #eedec5;
+  }
+  #hero-description h1{
+    max-width: 350px;
+    font-size: 4rem;
+  }
+  .navlogo p{
+    margin: 2rem 0rem;
+  }
+  nav{
+    padding: 0 24px;
+  }
+  .infocard-image img{
+    width: 100px;
+    margin-bottom: 27px;
+  }
+  .more-info-heading h2{
+    font-size: 3.5rem;
+  }
+  .infocard{
+    border-radius: 5px;
+  }
+  .ratingsDescription h3{
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .hero-image{
+    height:30rem;
+    width: 30rem;
+  }
+  .hero-container button{
+    display: none;
+  }
+  .hero-container{
+    padding: 1.4rem 2.4rem 1.4rem 2.4rem;
+  }
+  .quotes-container{
+    gap: 7rem;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .hero-image{
+    max-height:27rem;
+    max-width: 27rem;
+    border: 1.4rem solid #eedec5;
+  }
+}
