@@ -44,7 +44,7 @@ ul li{
   --sub-article-clr: rgb(249, 255, 216);
   --secnond-text-clr: rgb(17, 134, 49);
   --heading-text-clr: rgb(0, 89, 36);
-  -aside-clr: rgb(248, 160, 140);
+  --aside-clr: rgb(248, 160, 140);
   --hover-clr: rgba(108, 214, 136, 0.7);
   --roman-font : 'Times New Roman', Times, serif;
 }
@@ -263,7 +263,6 @@ button:hover{
 /* Quotes and Ratings Section */
 #quotesAndRatings{
   padding: 0 35px;
-  margin-bottom: 50rem;
   width: 100%;
 }
 .quotes-container{
@@ -271,7 +270,7 @@ button:hover{
   height: fit-content;
   max-width: 1355px;
   flex: 1;
-  padding: 8.5% 6rem;
+  padding: 8.1% 6rem;
   gap: 5%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 24px 0px
@@ -291,12 +290,146 @@ button:hover{
   font-weight: 300;
 }
 .ratingsDescription h3{
-  font-size: 5rem;
+  font-size: 4.8rem;
   font-family: myfont;
   font-weight: 300;
+  color: rgba(0, 0, 0, 0.938);
   margin-bottom: 2.5rem;
 }
 .ratingsDescription p{
   font-size: 1.7rem;
   margin-bottom: 3.7rem;
+}
+
+/* reviews Section */
+
+#customer-reviews{
+  padding: 35px;
+  margin-bottom: 50rem;
+  width: 100%;
+}
+.reviews-container{
+  max-width:1355px;
+  flex: 1;
+  padding: 2rem 4.5rem
+}
+
+.reviews-heading{
+  max-width: 420px
+}
+.reviews-heading h2{
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.reviews-heading .reviews-subheading{
+  font-size: 3.3rem;
+  font-weight: 300;
+  font-family: myfont;
+  margin-bottom: 1.8rem;
+  color: rgba(0, 0, 0, 0.945)
+}
+
+.reviews-heading p{
+  font-size: 1.7rem;
+}
+
+
+/* first review */
+
+.first-review{
+  gap: 25px;
+  align-items: flex-end;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 24px 0px;
+}
+.review-text{
+  background-color: var(--aside-clr);
+  padding: 20px 25px;
+  border-radius: 12px;
+  max-width: 42rem;
+}
+.review-text .review-content{
+  font-family: myfont;
+  font-style: italic;
+  font-size: 3.5rem;
+  margin-bottom: 8rem;
+  letter-spacing: .7px;
+  color: rgba(0, 0, 0, 0.856);
+}
+.review-text .advisorName{
+  font-size: 1.4rem;
+  font-family: var(--roman-font);
+  margin-bottom: 1rem;
+}
+.review-img img {
+  max-width: 44rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/*Second review */
+.second-review{
+  gap: 25px;
+  align-items: flex-start;
+  margin-bottom: 11rem;
+}
+.reviewText-container{
+  background-color:var(--sub-article-clr);
+  box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 24px 0px;
+  padding: 27px;
+  border-radius: 12px;
+}
+.reviewText-container img{
+  max-width: 35rem;
+  max-height: 35rem;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.reviewText-container .review-text{
+  padding: 0px 5px 0px 0px;
+  max-width: 27rem;
+  background-color: transparent;
+}
+.reviewText-container .review-content{
+  padding-left: 10px;
+  margin-bottom: 2.3rem;
+  letter-spacing: .5px;
+}
+.reviewText-container .advisorName{
+  margin-bottom: 0px;
+}
+
+.approval-rating{
+  flex:.67;
+  padding: 3rem;
+  background-color: var(--heading-text-clr);
+  box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 24px 0px;
+  color: white;
+  border-radius: 12px;
+}
+.approval-rating p{
+  font-family: "Noi Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-family: arial;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+.approval-rating span{
+  font-family: "Noi Grotesk", sans-serif;
+  font-size: 10rem;
+  font-weight: 300;
+}
+.approval-rating hr{
+  margin: 2rem 0rem 3.5rem 0rem;
+}
+
+.learnmore-text{
+  flex-direction: column;
+}
+.learnmore-text p:first-child{
+  font-size: 1.6rem;
+  font-family: "Noi Grotesk", sans-serif;
+  margin-bottom: 7px;
 }
