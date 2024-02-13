@@ -141,11 +141,13 @@ ul li:active,
   
 }
 #hero-description p{
-  font-size: 1.7rem;
   font-family:'Times New Roman', Times, serif;
   letter-spacing: 0.3px;
   margin-bottom: 4rem;
   max-width: 40rem;
+}
+.description-text{
+  font-size: 1.7rem;
 }
 button {
   padding: 1.4rem 1.6rem;
@@ -241,9 +243,7 @@ button:hover{
   color: rgba(0, 0, 0, 0.946);
   margin-bottom: 3.4rem;
 }
-.infocard p{
-  font-size: 1.7rem;
-}
+
 .infocard-image{
   background: transparent;
   padding-bottom: 24px;
@@ -297,7 +297,6 @@ button:hover{
   margin-bottom: 2.5rem;
 }
 .ratingsDescription p{
-  font-size: 1.7rem;
   margin-bottom: 3.7rem;
 }
 
@@ -331,10 +330,6 @@ button:hover{
   color: rgba(0, 0, 0, 0.945)
 }
 
-.reviews-heading p{
-  font-size: 1.7rem;
-}
-
 
 /* first review */
 
@@ -363,10 +358,17 @@ button:hover{
   font-family: var(--roman-font);
   margin-bottom: 1rem;
 }
-.review-img img {
-  max-width: 44rem;
+.review-img{
+  width: 100%;
+  max-width: 43rem;
+  height: auto;
   border-radius: 12px;
   overflow: hidden;
+}
+.review-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
 }
 
 /*Second review */
@@ -380,12 +382,19 @@ button:hover{
   box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 24px 0px;
   padding: 27px;
   border-radius: 12px;
+
 }
-.reviewText-container img{
+.secondReview-image {
   max-width: 35rem;
   max-height: 35rem;
   border-radius: 6px;
   margin-right: 20px;
+  overflow: hidden;
+}
+.secondReview-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
 }
 .reviewText-container .review-text{
   padding: 0px 5px 0px 0px;

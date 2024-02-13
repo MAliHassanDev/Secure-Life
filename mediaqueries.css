@@ -91,7 +91,7 @@
   }
   .quotes-container{
     flex-direction: column-reverse;
-    padding: 30px;
+    padding: 30px 30px 12rem 30px;
     gap: 10rem;
     max-width: 652px;
   }
@@ -103,7 +103,48 @@
   .ratingsDescription h3{
     font-size: 4rem;
   }
+  .reviews-container{
+    max-width: 652px;
+    padding: 4.5rem 0rem 2rem 0rem;
+  }
+  .first-review{
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+  }
+  .review-text .review-content{
+    letter-spacing: 0px;
+    margin-bottom: 6rem;
+    font-size: 3rem;
+  }
+  .review-text{
+    max-width: 100%;
+  }
   
+  #customer-reviews{
+    padding: 24px;
+  }
+  .reviews-heading{
+    margin-bottom: 5.2rem;
+  }
+  .review-img{
+    max-width: 100%;
+    height: 43rem;
+  }
+  .review-img img{
+    object-fit: cover;
+    object-position: 0rem -7rem;
+  }
+  .second-review{
+    flex-direction: column;
+    margin-bottom: 9rem;
+  }
+  .approval-rating{
+    width: 100%;
+  }
+  .approval-rating span{
+    font-size: 8.4rem
+  }
 }
 
 
@@ -136,8 +177,48 @@
   .infocard{
     border-radius: 5px;
   }
-  .ratingsDescription h3{
+  .ratingsDescription h3,
+  .ratingsDescription h2{
     font-size: 3.6rem;
+  }
+  .description-text{
+    font-size: 1.6rem;
+    letter-spacing: .1px;
+  }
+  .quotes-container{
+    padding: 25px 25px 9rem 25px;
+  }
+  
+  .reviews-heading h2{
+    font-size: 2.9rem;
+  }
+  .reviews-subheading{
+    font-size: 2.4rem;
+  }
+  .review-text .review-content{
+    font-size: 2.4rem;
+  }
+  .review-text .advisorName{
+    font-size: 1.3rem;
+  }
+  .reviewText-container{
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+  }
+  .second-review{
+    margin-bottom: 5rem;
+  }
+  .secondReview-image{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 0px;
+    margin-bottom: 2.5rem;
+  }
+  .reviewText-container .review2-text{
+    max-width:97%;
+    padding-left: 0px;
   }
 }
 
@@ -154,6 +235,16 @@
   }
   .quotes-container{
     gap: 7rem;
+    padding: 20px 20px 7rem 20px;
+  }
+  .review-img img{
+    object-fit: cover;
+    object-position: top;
+  }
+  .review2-text .review-content{
+    margin-bottom: 5rem;
+  }
+  .reviews-container{
     padding: 20px;
   }
 }
