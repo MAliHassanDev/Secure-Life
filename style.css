@@ -304,7 +304,7 @@ button:hover{
 
 #customer-reviews{
   padding: 35px;
-  margin-bottom: 50rem;
+  margin-bottom: 5rem;
   width: 100%;
 }
 .reviews-container{
@@ -314,15 +314,15 @@ button:hover{
 }
 
 .reviews-heading{
-  max-width: 420px
+  max-width: 42rem;
 }
-.reviews-heading h2{
+.section-heading-roboto{
   font-size: 3.5rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.87);
 }
 
-.reviews-heading .reviews-subheading{
+.types-subheading{
   font-size: 3.3rem;
   font-weight: 300;
   font-family: myfont;
@@ -441,4 +441,63 @@ button:hover{
   font-size: 1.6rem;
   font-family: "Noi Grotesk", sans-serif;
   margin-bottom: 7px;
+}
+
+/* insurance types section */
+
+#insurance-types{
+  margin-bottom: 100rem;
+  width: 100%;
+  background-color: var(--article-clr)
+}
+.insurance-types-container{
+  max-width: 1355px;
+  flex: 1;
+  padding: 6.5rem 6rem 5rem 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+.types-heading-container{
+  max-width: 49rem;
+}
+.types-heading{
+  margin-bottom: 10rem;
+}
+.types-image{
+  width: 42.1rem;
+  height: 37.1rem;
+  margin-left: 17rem;
+  overflow: hidden;
+}
+.types-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: 100% 100%;
+}
+
+.types-description{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+.type-description-box{
+  background-color: white;
+  padding: 25px;
+  width: 100%;
+  max-width: 55rem;
+  border-radius: 12px;
+}
+.type-box-heading{
+  font-size: 2.5rem;
+  color: var(--heading-text-clr);
+  margin-bottom: 1.2rem;
+  font-family: var(--roman-font);
+  font-style: italic;
+}
+.types-description button{
+  width: 100%;
+  max-width: 55rem;
 }

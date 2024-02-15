@@ -15,6 +15,9 @@
   html {
     font-size: 58%;
   }
+  .types-image{
+    margin-left: 8rem;
+  }
 }
 
 @media screen and (max-width: 1150px){
@@ -30,6 +33,9 @@
   .nav-links,
   .nav-signin{
     display: none;
+  }
+  .types-image{
+    margin-left: 3rem;
   }
 } 
 
@@ -145,6 +151,36 @@
   .approval-rating span{
     font-size: 8.4rem
   }
+  .insurance-types-container{
+    flex-direction: column;
+    justify-content: center;
+    max-width: 652px;
+    padding: 6.5rem 0rem 4rem 0rem;
+  }
+  #insurance-types{
+    padding: 0 24px;
+  }
+  .types-image{
+    display: none;
+  }
+  .type-description-box{
+    max-width: 100%;
+  }
+  .types-description button{
+    max-width: 100%;
+  }
+  .type-box-heading{
+    font-size: 2.4rem;
+  }
+  .types-heading{
+    margin-bottom: 3.5rem;
+  }
+  .types-heading .section-heading-roboto{
+    margin-bottom: .4rem;
+  }
+  .types-heading .types-subheading{
+    margin-bottom: 2.5rem;
+  }
 }
 
 
@@ -189,10 +225,10 @@
     padding: 25px 25px 9rem 25px;
   }
   
-  .reviews-heading h2{
+  .section-heading-roboto{
     font-size: 2.9rem;
   }
-  .reviews-subheading{
+  .types-subheading{
     font-size: 2.4rem;
   }
   .review-text .review-content{
