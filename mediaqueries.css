@@ -155,7 +155,7 @@
     flex-direction: column;
     justify-content: center;
     max-width: 652px;
-    padding: 6.5rem 0rem 4rem 0rem;
+    padding: 4rem 0rem 4rem 0rem;
   }
   #insurance-types{
     padding: 0 24px;
@@ -180,6 +180,13 @@
   }
   .types-heading .types-subheading{
     margin-bottom: 2.5rem;
+  }
+  .experience-container h2,
+  .experience-container h3{
+    font-size: 3.7rem;
+  }
+  .experience-container p:nth-child(3){
+    font-size: 2.3rem;
   }
 }
 
@@ -252,9 +259,47 @@
     margin-right: 0px;
     margin-bottom: 2.5rem;
   }
+  #experience-reviews{
+    padding: 5rem 24px;
+  }
+  #review{
+    width: 10px;
+  }
   .reviewText-container .review2-text{
     max-width:97%;
     padding-left: 0px;
+  }
+  .second-reviews-container .review-box{
+    width: 100%;
+  }
+  .review-box .experience-content{
+    font-size: 2.4rem;
+  }
+  .experience-container h2,
+  .experience-container h3{
+    font-size: 2.8rem;
+  }
+  .experience-container p:nth-child(3){
+    font-size: 2rem;
+    text-align: center;
+  }
+  .getStarted-container{
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 6rem;
+  }
+  .getStarted-text p{
+    max-width: 100%;
+  }
+  .getStarted-text p:first-child{
+    font-size: 2rem;
+  }
+  .getStarted-image{
+    width: 20rem;
+    height: 20rem;
+  }
+  .getStarted-image img{
+    transform: scale(1.1)
   }
 }
 
@@ -283,6 +328,7 @@
   .reviews-container{
     padding: 20px;
   }
+  
 }
 
 @media screen and (max-width: 350px){

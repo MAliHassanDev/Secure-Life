@@ -13,6 +13,7 @@ html {
 }
 body{
   font-family: "Roboto", sans-serif;
+  background-color: #FBFCF5;
 }
 p {
   margin: 0px;
@@ -23,6 +24,7 @@ a {
   color: black;
   margin: 2rem;
 }
+
 button {
   transition: background-color .2s ease-in;
   background-color: var(--btn-clr);
@@ -446,14 +448,13 @@ button:hover{
 /* insurance types section */
 
 #insurance-types{
-  margin-bottom: 100rem;
   width: 100%;
   background-color: var(--article-clr)
 }
 .insurance-types-container{
   max-width: 1355px;
   flex: 1;
-  padding: 6.5rem 6rem 5rem 4.5rem;
+  padding: 6.5rem 6rem 7rem 4.5rem;
   display: flex;
   justify-content: space-between;
   gap: 5%;
@@ -489,6 +490,7 @@ button:hover{
   width: 100%;
   max-width: 55rem;
   border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 24px 0px;
 }
 .type-box-heading{
   font-size: 2.5rem;
@@ -500,4 +502,146 @@ button:hover{
 .types-description button{
   width: 100%;
   max-width: 55rem;
+}
+
+/* experience/reviewa section */
+
+#experience-reviews{
+  margin-bottom: 100rem;
+  padding: 8em 30px;
+  background-color: #FBFCF5;
+}
+.experience-container{
+  flex-direction: column;
+}
+.experience-container h2{
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.897);
+}
+.experience-container h3{
+  font-family: myfont;
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+  color: rgba(0, 0, 0, 0.952);
+}
+
+.experience-container p:nth-child(3){
+  font-size: 2.5rem;
+  margin-bottom: 10rem;
+}
+.experience-container p:nth-child(4){
+  font-size: 1.6rem;
+  font-family: Roboto;
+  margin-bottom: 3.8rem;
+}
+
+.second-reviews-container{
+  width: 100%;
+  height: fit-content;
+  column-gap: 25px;
+  overflow-x: auto;
+  margin-bottom: 2.4rem;
+  justify-content: flex-start;
+  scroll-snap-type: x mandatory;
+}
+.second-reviews-container::-webkit-scrollbar{
+  display: none;
+}
+.second-reviews-container .review-box{
+  width: 66.4rem;
+  height: 49.1rem;
+  padding: 35px;
+  font-size: 3rem;
+  border-radius: 12px;
+  flex-shrink: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 2px 4px 24px 0px;
+  scroll-snap-align: center;
+  scroll-margin: 0px 200px;
+  letter-spacing: .2px;
+}
+#review{
+  box-shadow: none;
+  background-color: transparent;
+  scroll-snap-align: none;
+  width: 80rem;
+}
+.review-anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8rem;
+}
+
+.review-anchor .dot{
+  height: 8px;
+  width: 10px;
+  background-color: rgb(153, 153, 153);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.review-anchor .active{
+  width: 20px;
+  background-color: var(--heading-text-clr);
+}
+
+.review-box .experience-content{
+  font-style: italic;
+  font-size: 3.4rem;
+}
+
+.review-box .experience-userName{
+  font-size: 1.7rem;
+}
+.experience-container span{
+  font-style: italic;
+}
+
+.getStarted-container{
+  padding: 25px;
+  background-color: var(--btn-clr);
+  border-radius: 12px;
+  justify-content: space-between;
+  gap: 6rem;
+}
+.getStarted-text p{
+  font-family: "Roboto", sans-serif;
+  max-width: 380px;
+}
+.getStarted-text p:first-child{
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+.getStarted-text p:nth-child(2){
+  font-size: 1.57rem;
+  letter-spacing: .1px;
+  margin-bottom: 5rem;
+}
+.getStarted-text button{
+  background-color: white;
+}
+.getStarted-text button:hover{
+  background-color: rgb(222, 248, 222)
+}
+
+.getStarted-container .getStarted-image{
+  width: 180px;
+  height: 180px;
+}
+
+.getStarted-image img{
+  width: 100%;
+  height: 100%;
+  transform: scale(.97);
+  object-fit: cover;
 }
