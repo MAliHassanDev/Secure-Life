@@ -188,6 +188,12 @@
   .experience-container p:nth-child(3){
     font-size: 2.3rem;
   }
+  .carrierLogos-container{
+    row-gap: 2rem;
+  }
+  .carrier-logos img{
+    object-fit: contain;
+  }
 }
 
 
@@ -301,6 +307,28 @@
   .getStarted-image img{
     transform: scale(1.1)
   }
+  .insurancecarriers-Container  h2,
+  .insurancecarriers-Container  h3{
+    font-size: 28px;
+  }
+  .insurancecarriers-Container h3{
+    margin-bottom: 3rem;
+  }
+  .carrierLogos-container .carrier-logos{
+    height: 6rem;
+  }
+  #insurance-carriers{
+    padding: 8.5rem 24px .5rem 24px;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .carrierLogos-container{
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  }
+  .carrierLogos-container .carrier-logos{
+    height: 8rem;
+  }
 }
 
 @media screen and (max-width: 480px){
@@ -324,9 +352,6 @@
   }
   .review2-text .review-content{
     margin-bottom: 5rem;
-  }
-  .reviews-container{
-    padding: 20px;
   }
   
 }
