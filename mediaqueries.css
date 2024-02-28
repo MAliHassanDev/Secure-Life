@@ -281,6 +281,9 @@
   .review-box .experience-content{
     font-size: 2.4rem;
   }
+  .experience-container h3{
+    margin-bottom: 25px;
+  }
   .experience-container h2,
   .experience-container h3{
     font-size: 2.8rem;
@@ -288,6 +291,7 @@
   .experience-container p:nth-child(3){
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 6rem;
   }
   .getStarted-container{
     flex-direction: column;
@@ -306,6 +310,9 @@
   }
   .getStarted-image img{
     transform: scale(1.1)
+  }
+  .carrierLogos-container{
+    padding-right: 1rem;
   }
   .insurancecarriers-Container  h2,
   .insurancecarriers-Container  h3{

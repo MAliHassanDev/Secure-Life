@@ -24,7 +24,7 @@
 function currentSnapReview(){
   let currentScrollLeft = reviewsContainer.scrollLeft;
    const snapPoints = Array.from(reviewsContainer.children).map(review => review.offsetLeft);
-   const currentReviewIndex = snapPoints.findIndex(snapPoint => snapPoint>=(currentScrollLeft+600));
+   const currentReviewIndex = snapPoints.findIndex(snapPoint => snapPoint>=(currentScrollLeft+20));
    anchorDots.forEach((dot,index) =>{
     if(index==currentReviewIndex-1){
       dot.classList.add('active');
@@ -65,15 +65,18 @@ reviewsContainer.addEventListener('mousedown', (e)=>{
 reviewsContainer.addEventListener('mouseup', ()=>{
   isDown = false;
   enableScrollSnap();
-  currentSnapReview();
+  // currentSnapReview();
 })
 
 reviewsContainer.addEventListener('mouseleave', ()=>{
   isDown = false;
-  enableScrollSnap();
-  currentSnapReview();
+  
+  // currentSnapReview();
 })
 
+reviewsContainer.addEventListener('scroll',() =>{
+  currentSnapReview();
+})
 reviewsContainer.addEventListener('mousemove', (e)=>{
   e.preventDefault()
   if(!isDown){
