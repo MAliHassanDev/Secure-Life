@@ -9,10 +9,32 @@
 
 
 
+// text animation
 
 
+window.addEventListener('scroll', textReveal);
 
+function textReveal(){
 
+  revealElements = document.querySelectorAll('.reveal');
+  
+
+  revealElements.forEach(element => {
+    let windowHeight = window.innerHeight;
+    let elementTop = element.getBoundingClientRect().top;
+    let revealPoint =  30;
+    if(elementTop+revealPoint < windowHeight){
+      element.classList.add('active');
+    } else {
+      element.classList.remove('active');
+    }
+  })
+ 
+  
+
+}
+
+textReveal();
 
 
 

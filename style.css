@@ -14,6 +14,7 @@ html {
 body{
   font-family: "Roboto", sans-serif;
   background-color: #FBFCF5;
+  position: relative;
 }
 p {
   margin: 0px;
@@ -22,7 +23,7 @@ p {
 a {
   text-decoration: none;
   color: black;
-  margin: 2rem;
+  
 }
 
 button {
@@ -38,6 +39,7 @@ button {
 ul li{
   list-style: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 :root{
@@ -49,6 +51,7 @@ ul li{
   --aside-clr: rgb(248, 160, 140);
   --hover-clr: rgba(108, 214, 136, 0.7);
   --roman-font : 'Times New Roman', Times, serif;
+  --roboto-font : "Roboto", sans-serif;
   --h2-clr : rgba(0, 0, 0, 0.897);
 }
 
@@ -89,6 +92,9 @@ nav {
 
 }
 
+.nav-links a{
+  margin: 2rem;
+}
 .nav-links ul li, 
 .nav-signin ul li{
   font-size: 1.6rem;
@@ -123,14 +129,18 @@ ul li:active,
   width: 58rem;
   border-radius: 50%;
   border: 3rem solid #eedec5;
-  box-shadow: inset 0px 0px 3px 5px black;
   margin-bottom: 4rem;
+  transition: all 1s ease;
+  position: relative;
+  z-index: 5;
 }
+
 .hero-image img{
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
+  
 }
 #hero-description{
   flex-basis: 450px;
@@ -141,7 +151,7 @@ ul li:active,
   font-family: myfont;
   letter-spacing: 1px;
   margin-bottom: 2rem;
-  
+  transition: all 1s ease;
 }
 #hero-description p{
   font-family:'Times New Roman', Times, serif;
@@ -151,10 +161,12 @@ ul li:active,
 }
 .description-text{
   font-size: 1.7rem;
+  transition: all 1s ease .15s;
 }
 button {
   padding: 1.4rem 1.6rem;
   font-size: 1.5rem;
+  transition: all 1s ease .25s;
 }
 button:hover{
   background-color:rgba(108, 214, 136, 0.7);
@@ -165,10 +177,11 @@ button:hover{
 .description-line1{
   font-size: 15px;
   letter-spacing: .3px;
+  margin-bottom: 7px;
+  transition: all 1s ease .1s;
 }
-.hero-image-description .description-line2{
-  margin-top: -14px;
-}
+
+
 .description-line{
   color: var(--secnond-text-clr);
   text-align: center;
@@ -177,6 +190,7 @@ button:hover{
   cursor: pointer;
   position: relative;
   width: fit-content;
+  transition: all 1s ease .2s;
 }
 .description-line::after{
   content:'';
@@ -218,11 +232,13 @@ button:hover{
 .more-info-heading h2{
   font-size: 3.8rem;
   font-weight: 400;
+  transition: all 1s ease;
 }
 .more-info-heading h3{
   font-size: 3.4rem;
   font-family: myfont;
   font-weight: 400;
+  transition: all 1s ease;
 }
 .infocard{
   max-width: 310px;
@@ -253,6 +269,7 @@ button:hover{
   align-self: flex-end;
   flex-direction: column;
   box-shadow: none;
+  transition: all 1s ease .1s;
 }
 .infocard-image img{
   width: 130px;
@@ -262,6 +279,15 @@ button:hover{
   font-family:'Times New Roman', Times, serif;
 }
 
+.infocard_1{
+  transition: all 1s ease .1s;
+}
+.infocard_2{
+  transition: all 1s ease .3s;
+}
+.infocard_3{
+  transition: all 1s ease .5s;
+}
 /* Quotes and Ratings Section */
 #quotesAndRatings{
   padding: 0 35px;
@@ -280,6 +306,7 @@ button:hover{
 
 .ratingsImg{
   flex: 1.25;
+  transition: all 1s ease;
 }
 .ratingsImg img{
  width: 100%;
@@ -290,6 +317,7 @@ button:hover{
 .ratingsDescription h2{
   font-size: 5rem;
   font-weight: 300;
+  transition: all 1s ease;
 }
 .ratingsDescription h3{
   font-size: 4.8rem;
@@ -297,9 +325,91 @@ button:hover{
   font-weight: 300;
   color: rgba(0, 0, 0, 0.938);
   margin-bottom: 2.5rem;
+  transition: all 1s ease;
 }
 .ratingsDescription p{
   margin-bottom: 3.7rem;
+}
+
+/* Insurance Carriers/Products Section */
+
+#insurance-carriers{
+  width: 100%;
+  padding: 10rem 24px 5rem 24px;
+}
+
+.insurancecarriers-Container{
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrierLogos-container{
+  width: 100%;
+  margin-bottom: 5rem;
+  display: grid;
+  row-gap: 5rem;
+  column-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(22% ,1fr));
+}
+
+.carrierLogos-container .carrier-logos{
+  height: 10rem;
+}
+
+.carrier-logos img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom ;
+}
+
+.insurancecarriers-Container h2{
+  font-size: 4.9rem;
+  font-weight: 400;
+  color: var(--h2-clr);
+  transition: all 1s ease;
+}
+.insurancecarriers-Container h3{
+  font-size: 4.9rem;
+  font-weight: 400;
+  font-family: var(--roman-font);
+  font-style: italic;
+  margin-bottom: 5rem;
+  transition: all 1s ease;
+}
+
+.insurancecarriers-Container .description-line1{
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.logo_1{
+  transition: all 1s ease .1s;
+}
+.logo_2{
+  transition: all 1s ease .15s;
+}
+.logo_3{
+  transition: all 1s ease .25s;
+}
+.logo_4{
+  transition: all 1s ease .3s;
+}
+.logo_5{
+  transition: all 1s ease .35s;
+}
+.logo_6{
+  transition: all 1s ease .45s;
+}
+.logo_7{
+  transition: all 1s ease .5s;
+}
+.logo_8{
+  transition: all 1s ease .55s;
 }
 
 /* reviews Section */
@@ -322,6 +432,7 @@ button:hover{
   font-size: 3.5rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.87);
+  transition: all 1s ease;
 }
 
 .types-subheading{
@@ -329,7 +440,8 @@ button:hover{
   font-weight: 300;
   font-family: myfont;
   margin-bottom: 1.8rem;
-  color: rgba(0, 0, 0, 0.945)
+  color: rgba(0, 0, 0, 0.945);
+  transition: all 1s ease;
 }
 
 
@@ -346,6 +458,7 @@ button:hover{
   padding: 20px 25px;
   border-radius: 12px;
   max-width: 42rem;
+  transition: all 1s ease .1s;
 }
 .review-text .review-content{
   font-family: myfont;
@@ -366,6 +479,7 @@ button:hover{
   height: auto;
   border-radius: 12px;
   overflow: hidden;
+  transition: all 1s ease .4s;
 }
 .review-img img {
   width: 100%;
@@ -384,7 +498,7 @@ button:hover{
   box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 24px 0px;
   padding: 27px;
   border-radius: 12px;
-
+  transition: all 1s ease .1s;
 }
 .secondReview-image {
   max-width: 35rem;
@@ -419,6 +533,7 @@ button:hover{
   box-shadow: rgba(0, 0, 0, 0.04) 2px 4px 24px 0px;
   color: white;
   border-radius: 12px;
+  transition: all 1s ease .35s;
 }
 .approval-rating p{
   font-family: "Noi Grotesk", sans-serif;
@@ -443,6 +558,7 @@ button:hover{
   font-size: 16px;
   font-family: "Noi Grotesk", sans-serif;
   margin-bottom: 7px;
+  transition: all 1s ease .1s;
 }
 
 /* insurance types section */
@@ -470,11 +586,13 @@ button:hover{
   height: 37.1rem;
   margin-left: 17rem;
   overflow: hidden;
+  transition: all 1s ease .1s;
 }
 .types-image img{
   width: 100%;
   height: 100%;
   object-fit: 100% 100%;
+ 
 }
 
 .types-description{
@@ -504,11 +622,25 @@ button:hover{
   max-width: 55rem;
 }
 
+.box_1{
+  transition: all 1s ease .1s;
+}
+.box_2{
+  transition: all 1s ease .2s;
+}
+.box_3{
+  transition: all 1s ease .3s;
+}
+.box_4{
+  transition: all 1s ease .4s;
+}
+.types-description button{
+  transition: all 1s ease .5s;
+}
 /* experience/reviewa section */
 
 #experience-reviews{
-  margin-bottom: 100rem;
-  padding: 8em 30px;
+  padding: 6.5em 30px;
   background-color: #FBFCF5;
 }
 .experience-container{
@@ -518,6 +650,7 @@ button:hover{
   font-size: 4.5rem;
   font-weight: 400;
   color: var(--h2-clr);
+  transition: all 1s ease;
 }
 .experience-container h3{
   font-family: myfont;
@@ -525,16 +658,19 @@ button:hover{
   font-weight: 300;
   margin-bottom: 4rem;
   color: rgba(0, 0, 0, 0.952);
+  transition: all 1s ease;
 }
 
 .experience-container p:nth-child(3){
   font-size: 2.5rem;
   margin-bottom: 10rem;
+  transition: all 1s ease .1s;
 }
 .experience-container p:nth-child(4){
   font-size: 1.6rem;
-  font-family: Roboto;
+  font-family: var(--roboto-font);
   margin-bottom: 3.8rem;
+  transition: all 1s ease .15s;
 }
 
 .second-reviews-container{
@@ -545,6 +681,7 @@ button:hover{
   margin-bottom: 2.4rem;
   justify-content: flex-start;
   scroll-snap-type: x mandatory;
+  transition: all 1s ease .2s;
 }
 .second-reviews-container::-webkit-scrollbar{
   display: none;
@@ -612,9 +749,10 @@ button:hover{
   border-radius: 12px;
   justify-content: space-between;
   gap: 6rem;
+  transition: all 1s ease .1s;
 }
 .getStarted-text p{
-  font-family: "Roboto", sans-serif;
+  font-family: var(--roboto-font);
   max-width: 380px;
 }
 .getStarted-text p:first-child{
@@ -646,57 +784,191 @@ button:hover{
   object-fit: cover;
 }
 
+/* footer section */
 
-/* Insurance Carriers/Products Section */
 
-#insurance-carriers{
+footer{
+  background-image: url('img/footer-illustration2.jpg');
+  background-size: cover;
+  overflow: hidden;
   width: 100%;
-  padding: 10rem 24px 5rem 24px;
-}
+  height: 90rem;
+  background-size: cover;
+  background-position: top;
+  /* margin-bottom: 100rem; */
+  }
 
-.insurancecarriers-Container{
-  width: 100%;
-  max-width: 1140px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .footer-container{
+    width: 100%;
+    max-width: 1365px;
+    padding: 24px;
+    height: 525px;
+    background-color: white;
+    margin-top: 24rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: all .4s ease;
+    /* margin: 0rem 3rem; */
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
 
-.carrierLogos-container{
-  width: 100%;
-  margin-bottom: 5rem;
-  display: grid;
-  row-gap: 5rem;
-  column-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(22% ,1fr));
-}
+  .footer-container .navlogo p{
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 4.4rem;
+    transition: all 1s ease;
+  }
 
-.carrierLogos-container .carrier-logos{
-  height: 10rem;
-}
+  .footer-nav{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 200px;
+  }
+  .aboutus-container{
+    display: grid;
+    grid-template-columns: repeat(2,20rem);
+    justify-content: space-between;
+    row-gap: 12px;
+    height: fit-content;
+    transition: all 1s ease .1s;
 
-.carrier-logos img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: bottom ;
-}
+  }
+  .financialNavigator-container{
+    transition: all 1s ease .15s;
+  }
+  .financialNavigator-container h4{
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: var(--h2-clr);
+    transition: color .16s ease;
+    cursor: pointer;
+  }
 
-.insurancecarriers-Container h2{
-  font-size: 4.9rem;
-  font-weight: 400;
-  color: var(--h2-clr)
-}
-.insurancecarriers-Container h3{
-  font-size: 4.9rem;
-  font-weight: 400;
-  font-family: var(--roman-font);
-  font-style: italic;
-  margin-bottom: 5rem;
-}
+  .financialNavigator-container h4:hover{
+    color: var(--btn-clr)
+  }
 
-.insurancecarriers-Container .description-line1{
-  margin-bottom: 5px;
-  text-align: center;
-}
+  .financial-navlinks{
+    display: grid;
+    grid-template-columns: repeat(2, 13rem);
+    row-gap: 12px;
+    column-gap: 7rem;
+  }
+  .financial-navlinks li{
+    font-size: 13.45px;
+  }
+
+  .contact-information{
+    transition: all 1s ease .2s;
+  }
+  .contact-information a{
+    font-size: 16px;
+    font-family: var(--roboto-font);
+    margin-left: 4rem;
+  }
+  .contact-information a:hover{
+    color: var(--btn-clr)
+  }
+
+  .footer-rule{
+    border: .01px solid rgba(192, 192, 192, 0.322);
+  }
+  .financial-navlinks .news-Icon{
+    width: 15px;
+    transform: rotate(45deg);
+    margin-bottom: -2px;
+    opacity: .7;
+  }
+  .financial-navlinks .webinars-Icon{
+    width: 15px;
+    margin-bottom: -3px;
+    margin-left: 3px;
+    
+  }
+
+  .footer-bottom-text{
+    padding: 24px 0px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+  }
+
+  .footer_terms{
+    margin-bottom: 3rem;
+    list-style-type: circle;
+    transition: all 1s ease .25s;
+  }
+
+  .footer_terms li{
+    margin-right: 15px;
+  }
+
+  .footer_terms li:nth-child(3)::before,
+  .footer_terms li:nth-child(4)::before{
+    content: '';
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    transform: translate(-9px ,6px)
+  }
+
+  .footer_textContainer > p{
+    font-family:var(--roboto-font) ;
+    max-width: 950px;
+  }
+  .footer_textContainer  span {
+    color: var(--secnond-text-clr);
+    cursor: pointer;
+    filter: brightness(120%)
+  }
+
+  .footer_textContainer p:nth-child(2){
+    margin-bottom: 2rem;
+    transition: all 1s ease .3s;
+  }
+  .footer-container p:nth-child(3){
+    transition: all 1s ease .35s;
+  }
+
+  .footer_socialIcons{
+    transition: all 1s ease .25s;
+  }
+  .footer_socialIcons img{
+    width: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .footer_socialIcons a{
+    margin: 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+   /* for text animation */
+
+  .reveal{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  .active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
