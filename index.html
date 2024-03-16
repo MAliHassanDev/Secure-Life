@@ -14,25 +14,40 @@
     <title>Secure Life</title>
   </head>
   <body>
-    <header>
-      <nav >
-        <div class="navlogo">
-          <p>Secure Life</p>
+    <header id="home">
+      <nav class="header_nav">
+        <div class="navlogo header_logo">
+          <p><a href="#home">Secure Life</a></p>
         </div>
         <div class="nav-links">
           <ul>
-            <a href=""><li>Advisiors</li></a>
-            <a href=""><li>Insurance</li></a>
-            <a href=""><li>About Us</li></a>
-            <a href=""><li>Insights</li></a>
+            <a href="#customer-reviews"><li>Advisiors</li></a>
+            <a href="#insurance-types"><li>Insurance</li></a>
+            <a href="#hero-moreinfo"><li>About Us</li></a>
+            <a href="#experience-reviews"><li>Insights</li></a>
           </ul>
         </div>
         <div class="nav-signin">
           <ul>
             <a href=""><li>Sign In</li></a>
-            <a href=""><li>Get Started</li></a>
+            <a href=""><li >Get Started</li></a>
           </ul>
         </div>
+      </nav>
+
+      <nav class="small_sidebar" >
+
+        <div class="hamburger_button" data-hamburger>
+          <span class="hamburger_line"></span>
+        </div>
+          <menu class="menu_links" data-menuLinks>
+            <a href="#customer-reviews"><li>Advisors</li></a>
+            <a href="#insurance-types"><li>Insurance</li></a>
+            <a href="#hero-moreinfo"><li>About Us</li></a>
+            <a href="#experience-reviews"><li>Insights</li></a>
+            <a><li>Sign In</li></a>
+            <a><li class="menu_get_started">Get Started</li></a>
+          </menu>
       </nav>
     </header>
     <main>
@@ -286,8 +301,8 @@
 
     <footer class="flex-div">
       <div class="footer-container reveal">
-        <div class="navlogo">
-          <p class="reveal">Secure Life</p>
+        <div class="navlogo footer_logo">
+          <p class="reveal"><a href="#home">Secure Life</a></p>
         </div>
 
         <nav class="footer-nav">
@@ -317,7 +332,11 @@
             <a href="mailto:muhammadalihassanofficial@gmail.com">hello&#x40;securelife.com</a>
           </div>
         </nav>
-        <hr class="footer-rule">
+
+        <div class="footer-line">
+          <hr class="footer-rule">
+        </div>
+       
 
         <div class="footer-bottom-text">
           <div class="footer_textContainer">
@@ -327,12 +346,14 @@
               <li>Privacy</li>
               <li>Terms</li>
             </ul>
+            <div class="footer_socialIcons reveal">
+              <a><img src="img/icons8-linkedin-30.png" alt="linkedln icon" class="linkedln_icon"></a>
+              <a><img src="img/icons8-twitter-50.png" alt="twitter Icoon" class="twitter_icon"></a>
+            </div>
+          </div>
+          <div class="footer_description">
             <p class="reveal">Life insurance technology and advisory services are provided by Modern Life Group, Inc. (“Modern Life”). Modern Life is a licensed insurance producer in all states where it offers products, and acts as an agent for various insurance companies. License information available <span>here.</span> Modern Life does business as Modern Life Insurance Services in CA. The information on this website is for informational purposes only. Products and specific product features may not be available in all states, and other limitations or restrictions may apply.</p>
             <p class="reveal">Securities offered through The Leaders Group, Inc. Member <span>FINRA/SIPC</span> 26 W Dry Creek Circle, Suite 800, Littleton, CO 80120, 303-797-9080. Modern Life is not affiliated with <span>The Leaders Group, Inc.</span> Check the background of your financial professional or broker/dealer with <apan>FINRA BrokerCheck.</span></p>
-          </div>
-          <div class="footer_socialIcons reveal">
-            <a><img src="img/icons8-linkedin-30.png" alt="linkedln icon"></a>
-            <a><img src="img/icons8-twitter-50.png" alt="twitter Icoon"></a>
           </div>
         </div>
       </div>

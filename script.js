@@ -4,10 +4,21 @@
 
 
 
+// slide bar 
+function toggleActiveClass(){
+  hamburgerButton.classList.toggle('hamburger_active');
+  menuLinksContainer.classList.toggle('menuLinks_active')
+}
 
+const hamburgerButton = document.querySelector('[data-hamburger]');
+const menuLinksContainer = document.querySelector('[data-menulinks]')
+const menuLinks = [...menuLinksContainer.children]
+hamburgerButton.addEventListener('click', toggleActiveClass)
 
-
-
+menuLinks.forEach(link => {
+  link.addEventListener('click', toggleActiveClass)
+})
+ 
 
 // text animation
 

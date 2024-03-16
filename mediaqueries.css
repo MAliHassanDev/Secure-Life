@@ -18,6 +18,9 @@
   .types-image{
     margin-left: 8rem;
   }
+  .footer_description > p{
+    max-width: 850px;
+  }
 }
 
 @media screen and (max-width: 1150px){
@@ -29,6 +32,9 @@
   }
   .aboutus-container{
     font-size: 15px;
+  }
+  .footer_description > p{
+    max-width: 750px;
   }
 }
 
@@ -52,9 +58,12 @@
   html{
     font-size: 62.5%;
   }
+  .small_sidebar{
+    display: block;
+  }
   .hero-container{
     flex-direction: column-reverse;
-    padding: 3rem 2.4rem;
+    padding: 3.6rem 2.4rem 3rem 2.4rem;
     row-gap: 4rem;
   }
   .hero-image-description{
@@ -197,7 +206,63 @@
   .carrier-logos img{
     object-fit: contain;
   }
-}
+  .footer-nav{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    row-gap: 4rem;
+    min-height: 390px;
+  }
+  footer{
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px 24px;
+  }
+  .footer-container{
+    max-width: 640px;
+    height: fit-content;
+    margin-top: 0rem;
+    row-gap: 1rem;
+  }
+  .footer-container .footer_logo{
+    margin-bottom: 3.4rem;
+    padding: 0px;
+  }
+  .contact-information a{
+    margin-left: 0rem;
+  }
+  .footer_textContainer{
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .footer_terms{
+    margin-bottom: 2rem;
+  }
+  .footer_socialIcons .linkedln_icon{
+    width: 24px;
+    margin-left: 0;
+  }
+  .footer_socialIcons .twitter_icon{
+    width: 20px;
+    transform: translateY(-2px)
+  }
+  .footer-bottom-text{
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  .aboutus-container{
+   column-gap: 12rem;
+  }
+  .financial-navlinks{
+    column-gap: 19rem;
+  }
+  .header_logo{
+    padding: 3rem 0px;
+    margin: 0;
+  }
+  
+} 
 
 
 @media screen and (max-width: 700px){
@@ -212,12 +277,6 @@
   #hero-description h1{
     max-width: 350px;
     font-size: 4rem;
-  }
-  .navlogo p{
-    margin: 2rem 0rem;
-  }
-  nav{
-    padding: 0 24px;
   }
   .infocard-image img{
     width: 100px;
@@ -330,6 +389,15 @@
   #insurance-carriers{
     padding: 8.5rem 24px .5rem 24px;
   }
+  .aboutus-container{
+    column-gap: 10rem;
+   }
+   .financial-navlinks{
+     column-gap: 17rem;
+   }
+  .header_nav{
+    padding: 0px 24px;
+  }
 }
 
 @media screen and (max-width: 580px){
@@ -338,6 +406,19 @@
   }
   .carrierLogos-container .carrier-logos{
     height: 8rem;
+  }
+  .aboutus-container{
+    column-gap: 6rem;
+   }
+   .financial-navlinks{
+     column-gap: 13rem;
+   }
+   .header_nav{
+    align-items: flex-start;
+   }
+   .header_logo{
+    padding: 2rem 0px;
+    margin: 0;
   }
 }
 
@@ -363,6 +444,32 @@
   .review2-text .review-content{
     margin-bottom: 5rem;
   }
+  .footer_terms li:first-child{
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  .footer-bottom-text{
+    padding-top: 2rem;
+  }
+  
+  .aboutus-container{
+    grid-template-columns: repeat(2,16rem);
+  }
+  .financial-navlinks{
+    grid-template-columns: repeat(2, 9rem);
+  }
+  .aboutus-container{
+    column-gap: 2rem;
+  }
+  .financial-navlinks{
+     column-gap: 9rem;
+  }
+
+  .hamburger_button{
+    top: 14px;
+  }
+  
+  
   
 }
 
@@ -371,5 +478,17 @@
     max-height:27rem;
     max-width: 27rem;
     border: 1.4rem solid #eedec5;
+  }
+  .aboutus-container{
+    column-gap: 1rem;
+   }
+   .financial-navlinks{
+     column-gap: 8rem;
+   }
+  .aboutus-container{
+    grid-template-columns: repeat(2,14.5rem);
+  }
+  .financial-navlinks{
+    grid-template-columns: repeat(2, 7.5rem);
   }
 }
