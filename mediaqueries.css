@@ -262,6 +262,13 @@
     padding: 3rem 0px;
     margin: 0;
   }
+  .menu_links{
+    top: -50%;
+    transition: all .25s ease-out;
+  }
+  .menuLinks_active{
+    top: 0;
+  }
   
 } 
 

@@ -146,7 +146,7 @@ ul li:active,
   flex-direction: column;
   row-gap: 2rem;
   align-items: flex-start;
-  transition: all .33s ease-out;
+  transition: all .30s ease-out;
 }
 .menuLinks_active{
   top: 0;
