@@ -54,12 +54,15 @@ textReveal();
 
 
 //  --------------- Reviews SlidBar---------------
+
 function currentSnapReview(){
-  let currentScrollLeft = reviewsContainer.scrollLeft;
-   const snapPoints = Array.from(reviewsContainer.children).map(review => review.offsetLeft);
-   const currentReviewIndex = snapPoints.findIndex(snapPoint => snapPoint>=(currentScrollLeft+20));
+  let boxWidth = reviewsBoxs[0].getBoundingClientRect().width;
+  
+   const boxesLeftPosition = Array.from(reviewsBoxs).map(review => review.getBoundingClientRect().left);
+   const currentReviewIndex = boxesLeftPosition.findIndex(boxposition => (boxposition <= boxWidth && boxposition > -50));
+   
    anchorDots.forEach((dot,index) =>{
-    if(index==currentReviewIndex-1){
+    if(index==currentReviewIndex){
       dot.classList.add('active');
     }else{
       dot.classList.remove('active');
@@ -80,6 +83,7 @@ function disableScrollSnap(){
 
 const anchorDots = document.querySelectorAll('.dot');
 const reviewsContainer = document.querySelector('.second-reviews-container');
+const reviewsBoxs = document.querySelectorAll('[data-review]')
 let startX, scrollLeft;
 let isDown = false;
 const prevReview = document.getElementById('prevReview');

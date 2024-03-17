@@ -132,9 +132,9 @@ ul li:active,
 }
 .menu_links{
   position: absolute;
-  top: -9%;
+  top: -12%;
   left: 0;
-  height: 98vh;
+  height: 100vh;
   width: 100%;
   z-index: 20;
   padding: 11.4rem 24px 5rem 24px;
@@ -146,7 +146,7 @@ ul li:active,
   flex-direction: column;
   row-gap: 2rem;
   align-items: flex-start;
-  transition: all .3s ease-out;
+  transition: all .33s ease-out;
 }
 .menuLinks_active{
   top: 0;
@@ -830,7 +830,8 @@ button:hover{
   box-shadow: none;
   background-color: transparent;
   scroll-snap-align: none;
-  width: 80rem;
+  width: 70rem;
+  pointer-events: none;
 }
 .review-anchor {
   display: flex;
